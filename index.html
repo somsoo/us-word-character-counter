@@ -1,308 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="/favicon.ico">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Word &amp; Character Counter | Reading Time &amp; Sentences</title>
-    <meta name="description" content="Count words, characters (with and without spaces), sentences, and estimated reading time for essays, articles, and resumes.">
-    <link rel="canonical" href="https://us-word-character-counter.enjoy-onepage.com/">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Word &amp; Character Counter | Reading Time &amp; Sentences">
-    <meta property="og:description" content="Count words, characters (with and without spaces), sentences, and estimated reading time for essays, articles, and resumes.">
-    <meta property="og:url" content="https://us-word-character-counter.enjoy-onepage.com/">
-    <meta property="og:site_name" content="Live Word & Character Counter">
-    <meta property="og:image" content="https://us-word-character-counter.enjoy-onepage.com/og-image.png">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Word &amp; Character Counter | Reading Time &amp; Sentences">
-    <meta name="twitter:description" content="Count words, characters (with and without spaces), sentences, and estimated reading time for essays, articles, and resumes.">
-    <meta name="twitter:image" content="https://us-word-character-counter.enjoy-onepage.com/og-image.png">
-
-    <!-- Schema.org WebApplication -->
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Word &amp; Character Counter | Reading Time &amp; Sentences</title>
+<meta name="description" content="Count words, characters with and without spaces, sentences and paragraphs as you type, plus reading and speaking time. Free, private, nothing saved.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://us-word-character-counter.enjoy-onepage.com/">
+<meta name="theme-color" content="#0369a1">
+<link rel="icon" href="/favicon.ico">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Word &amp; Character Counter">
+<meta property="og:title" content="Word &amp; Character Counter | Reading Time &amp; Sentences">
+<meta property="og:description" content="Count words, characters with and without spaces, sentences and paragraphs as you type, plus reading and speaking time. Free, private, nothing saved.">
+<meta property="og:url" content="https://us-word-character-counter.enjoy-onepage.com/">
+<meta property="og:image" content="https://us-word-character-counter.enjoy-onepage.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Word &amp; Character Counter | Reading Time &amp; Sentences">
+<meta name="twitter:description" content="Count words, characters with and without spaces, sentences and paragraphs as you type, plus reading and speaking time. Free, private, nothing saved.">
+<meta name="twitter:image" content="https://us-word-character-counter.enjoy-onepage.com/og-image.png">
+<link rel="alternate" type="application/rss+xml" title="Word &amp; Character Counter RSS" href="https://us-word-character-counter.enjoy-onepage.com/rss.xml">
+<link rel="sitemap" type="application/xml" href="https://us-word-character-counter.enjoy-onepage.com/sitemap.xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "Live Word & Character Counter",
+      "@id": "https://us-word-character-counter.enjoy-onepage.com/#webapp",
+      "name": "Word & Character Counter",
       "url": "https://us-word-character-counter.enjoy-onepage.com/",
-      "description": "Count words, characters (with and without spaces), sentences, and estimated reading time for essays, articles, and resumes.",
-      "applicationCategory": "UtilityApplication",
+      "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "All",
-      "inLanguage": "en-US",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
+      "inLanguage": "en",
+      "description": "A free word and character counter. Counts words, characters with and without spaces, sentences and paragraphs as you type, and estimates reading and speaking time from speeds you can change. Your text stays in your browser.",
+      "image": "https://us-word-character-counter.enjoy-onepage.com/og-image.png",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://us-word-character-counter.enjoy-onepage.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "How are words counted?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A word is any group of characters between spaces or line breaks that contains at least one letter or number. So well-known, don't, 3.5 and U.S. each count as one word, and a dash on its own counts as none. This is close to how most word processors count." } },
+        { "@type": "Question", "name": "Do characters include spaces?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Characters with spaces counts every letter, number, symbol, emoji, space and tab, but not line breaks. Characters without spaces leaves out all spaces, tabs and line breaks. An emoji or a letter with an accent counts as one character, the way you see it on screen." } },
+        { "@type": "Question", "name": "How is reading time estimated?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Reading time is the word count divided by a reading speed. The default, 238 words per minute, is the average silent reading rate for adults reading English non-fiction in a 2019 review of 190 studies by Marc Brysbaert in the Journal of Memory and Language; the same review found 260 words per minute for fiction. You can enter your own speed." } },
+        { "@type": "Question", "name": "How is speaking time estimated?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Speaking time uses 150 words per minute by default, a typical pace for a speech or presentation. Enter a lower speed for a slow, formal talk or a higher one for a quick, casual one." } },
+        { "@type": "Question", "name": "How are sentences and paragraphs counted?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A sentence ends at a period, question mark, exclamation mark or ellipsis followed by a space or line break, and at the end of each paragraph. Abbreviations such as Mr. or e.g. can add an extra sentence. Each line that has text on it counts as one paragraph; blank lines are skipped." } }
+      ]
     }
-    </script>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Layout Shield: Anti 390px Horizontal Overflow -->
-    <style id="layout-shield">
-        html, body {
-            max-width: 100% !important;
-            width: 100% !important;
-            overflow-x: hidden !important;
-        }
-        main, article, .container {
-            max-width: 100% !important;
-            box-sizing: border-box !important;
-        }
-        .manual-ad-box {
-            width: 100%;
-            max-width: 960px;
-            overflow: hidden;
-            margin: 12px auto;
-        }
-        .manual-ad-box ins {
-            max-width: 100% !important;
-            display: block;
-        }
-    </style>
-  <link rel="alternate" type="application/rss+xml" title="Word &amp; Character Counter | Reading Time &amp; Sentences" href="https://us-word-character-counter.enjoy-onepage.com/rss.xml">
-  <link rel="sitemap" type="application/xml" href="https://us-word-character-counter.enjoy-onepage.com/sitemap.xml">
+  ]
+}
+</script>
+<!-- ADSENSE START: loader -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106" crossorigin="anonymous"></script>
+<!-- ADSENSE END: loader -->
+<style>
+:root{--bg:#f3f7fb;--card:#fff;--ink:#0f2233;--muted:#52667a;--accent:#0369a1;--line:#dce6ef;--g:#15803d;--r:#b91c1c}
+*{box-sizing:border-box}
+html,body{margin:0;max-width:100%;overflow-x:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.header{background:linear-gradient(135deg,#0c4a6e,#0369a1);color:#fff;text-align:center;padding:26px 16px 22px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.header h1{margin:0;font-size:1.7rem}
+.header-sub{opacity:.92;margin-top:6px;font-size:.95rem}
+.wrap{max-width:1080px;margin:0 auto;padding:12px 14px 8px}
+.grid2{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:1024px){.grid2{grid-template-columns:3fr 2fr;align-items:start}.result{position:sticky;top:12px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:14px 0}
+.grid2 .card{margin:0}
+.card h2{font-size:1.15rem;margin:4px 0 10px}
+.card h3{font-size:1rem;margin:14px 0 6px}
+.lbl{display:block;font-weight:600;margin:10px 0 4px;font-size:.95rem}
+textarea{width:100%;min-height:260px;font:inherit;font-size:1rem;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);resize:vertical}
+input[type=text],select{width:100%;font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.row>div{flex:1 1 140px;min-width:0}
+.btn{font:inherit;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:10px;padding:9px 14px;cursor:pointer}
+.btn.sm{padding:4px 9px;font-size:.85rem;border-radius:8px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.err{color:var(--r);font-weight:600;margin:8px 0 0}
+.hint{font-size:.86rem;color:var(--muted);margin:6px 0}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0}
+.kpi{border:1px solid var(--line);border-radius:12px;padding:8px 10px}
+.kpi .v{font-size:1.35rem;font-weight:800;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.kpi .k{font-size:.82rem;color:var(--muted)}
+.kpi.big{background:#f0f9ff;border-color:#bae6fd}
+.kpi.big .v{font-size:1.9rem}
+.limit{font-weight:700;margin:8px 0}
+.limit.ok{color:var(--g)}.limit.over{color:var(--r)}
+.notice{border-color:#fcd34d;background:#fffbeb}
+.faq-item h3{font-size:1rem;margin:12px 0 4px}
+.faq-item p{margin:0;color:#34485c}
+.src{font-size:.82rem;color:var(--muted)}
+.ad-box{max-width:1080px;margin:10px auto;padding:0 14px;background:transparent;overflow:hidden;text-align:center}
+.ad-top ins{max-height:90px}
+.footer{text-align:center;font-size:.85rem;color:var(--muted);padding:18px 14px 28px}
+.footer a{color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#0f2233;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw}
+.toast.show{opacity:1}
+@media (prefers-reduced-motion: reduce){.toast{transition:none}}
+</style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+<body>
+<header class="header">
+  <h1>Word &amp; Character Counter</h1>
+  <div class="header-sub">Words · characters · sentences · paragraphs · reading and speaking time</div>
+</header>
 
-    <!-- Header -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2 font-black text-slate-900 text-lg sm:text-xl tracking-tight">
-                <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm font-black shadow-sm">1P</span>
-                <span>Live Word & Character Counter</span>
-            </a>
-            <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
-                2026 US Edition
-            </span>
-        </div>
-    </header>
+<!-- ADSENSE START: top -->
+<div class="ad-box ad-top">
+  <ins class="adsbygoogle" style="display:block;height:60px;max-height:90px" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3824727725" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: top -->
 
-    <!-- Main Workspace -->
-    <main class="max-w-6xl mx-auto px-4 py-6 flex-grow w-full">
-        <!-- Title Banner -->
-        <div class="mb-8 text-center max-w-2xl mx-auto">
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight mb-2">Live Word & Character Counter</h1>
-            <p class="text-sm sm:text-base text-slate-600">Count words, characters (with and without spaces), sentences, and estimated reading time for essays, articles, and resumes.</p>
-        </div>
-
-        <!-- 2-Column Gold Standard Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <!-- Left: Input Form (6 cols) -->
-            <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200">
-                <h2 class="text-base font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100 flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-                    <span>Input Parameters</span>
-                </h2>
-                
-        <div class="space-y-4">
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Primary Value / Amount ($)</label>
-                <div class="relative">
-                    <span class="absolute left-3 top-3 text-slate-400 font-bold">$</span>
-                    <input type="text" id="primaryVal" value="1,000" class="w-full pl-8 pr-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="1,000">
-                </div>
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Secondary Parameter / Multiplier</label>
-                <input type="number" id="secVal" value="12" min="1" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none">
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Calculation Category</label>
-                <select id="calcCat" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                    <option value="standard">Standard US Model (Benchmark)</option>
-                    <option value="conservative">Conservative Estimate (-10%)</option>
-                    <option value="growth">Accelerated Target (+15%)</option>
-                </select>
-            </div>
-        </div>
-        
-                <button type="button" onclick="calculate()" class="mt-6 w-full py-3.5 bg-blue-600 hover:bg-blue-700 active:scale-[0.99] text-white font-black text-base rounded-xl shadow-md transition duration-150 cursor-pointer whitespace-nowrap">
-                    Calculate Now
-                </button>
-            </div>
-
-            <!-- Right: Results Card (6 cols sticky) -->
-            <div class="lg:col-span-6 lg:sticky lg:top-24">
-                <div id="resultCard" class="hidden">
-                    
-        <div class="bg-blue-600 text-white p-6 rounded-2xl shadow-md mb-6">
-            <p class="text-xs uppercase font-bold tracking-wider opacity-90 mb-1">Estimated Annual Result</p>
-            <h3 id="resPrimary" class="text-3xl sm:text-4xl font-black tracking-tight">$0</h3>
-            <p class="text-xs mt-2 opacity-80">Calculated under standard US benchmarking formulas</p>
-        </div>
-        <div class="space-y-3 text-sm text-slate-700 bg-white p-5 rounded-2xl border border-slate-200">
-            <div class="flex justify-between pb-2 border-b border-slate-100">
-                <span class="text-slate-500">Monthly Equivalent:</span>
-                <span id="resMonthly" class="font-bold text-slate-900">$0</span>
-            </div>
-            <div class="flex justify-between pt-1">
-                <span class="font-bold text-slate-900">Growth / Variance Index:</span>
-                <span id="resBenchmark" class="font-black text-blue-600">0%</span>
-            </div>
-        </div>
-        
-                    <div class="mt-4 flex gap-3">
-                        <button type="button" onclick="copyResults()" class="flex-1 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm rounded-xl transition shadow-sm cursor-pointer whitespace-nowrap">
-                            Copy Results
-                        </button>
-                        <button type="button" onclick="resetForm()" class="px-5 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm rounded-xl transition cursor-pointer whitespace-nowrap">
-                            Reset
-                        </button>
-                    </div>
-                </div>
-                <!-- Initial Placeholder -->
-                <div id="placeholderCard" class="p-8 text-center border-2 border-dashed border-slate-200 rounded-2xl text-slate-400">
-                    <p class="text-sm font-semibold">Enter your inputs on the left and click "Calculate Now" to view full projections.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- E-E-A-T Editorial FAQ Accordion -->
-        <section class="mt-14 max-w-3xl mx-auto bg-white p-6 sm:p-8 rounded-2xl border border-slate-200">
-            <h2 class="text-lg sm:text-xl font-black text-slate-900 mb-4">Frequently Asked Questions</h2>
-            <div class="space-y-3">
-                
-    <!-- In-Depth Guidebook CTA Banner (4-1-4 Compliance) -->
-    <div class="mt-8 mb-8 p-6 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl border border-indigo-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        <span class="inline-block px-3 py-1 bg-indigo-600 text-white text-xs font-bold rounded-full mb-2">COMPLETE 2026 HANDBOOK</span>
-        <h3 class="text-lg font-bold text-gray-900">Want to master the statutory details? Read our in-depth guide</h3>
-        <p class="text-xs text-gray-600 mt-1">Explore official calculation formulas, edge-case exemptions, and strategic checklists.</p>
+<main class="wrap">
+  <div class="grid2">
+    <section class="card" id="editor" aria-labelledby="in-h">
+      <h2 id="in-h">1. Type or paste your text</h2>
+      <label class="lbl" for="txt">Your text</label>
+      <textarea id="txt" spellcheck="true" placeholder="Start typing or paste your essay, article, post or script here. Nothing you enter is saved or sent anywhere."></textarea>
+      <div class="actions">
+        <button type="button" class="btn sm" id="btn-clear">Clear text</button>
+        <button type="button" class="btn sm" id="btn-undo" hidden>Undo clear</button>
       </div>
-      <a href="/guides/guide.html" class="whitespace-nowrap px-5 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl shadow-md transition flex items-center gap-2 text-xs shrink-0">
-        Read In-Depth Guide &rarr;
-      </a>
-    </div>
+      <h3>Settings</h3>
+      <div class="row">
+        <div><label class="lbl" for="rs">Reading speed (words per minute)</label><input id="rs" type="text" inputmode="numeric" maxlength="4" value="238"></div>
+        <div><label class="lbl" for="ss">Speaking speed (words per minute)</label><input id="ss" type="text" inputmode="numeric" maxlength="4" value="150"></div>
+      </div>
+      <div class="actions" style="margin-top:6px">
+        <button type="button" class="btn sm" data-rs="238">238 · non-fiction</button>
+        <button type="button" class="btn sm" data-rs="260">260 · fiction</button>
+      </div>
+      <div class="row">
+        <div><label class="lbl" for="limit">Limit (optional)</label><input id="limit" type="text" inputmode="numeric" maxlength="7" placeholder="e.g. 500"></div>
+        <div><label class="lbl" for="unit">Limit counts</label><select id="unit"><option value="words">Words</option><option value="chars">Characters (with spaces)</option><option value="nospace">Characters (no spaces)</option></select></div>
+      </div>
+      <p class="err" id="err" role="alert" hidden></p>
+    </section>
 
-    <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>How accurate are these calculations?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Calculations use 2026 statutory formulas and verified standard economic models. While highly accurate for benchmarking, always consult a certified professional for individual legal or financial filings.
-                    </p>
-                </details>
-                <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>Is my personal or financial data stored?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        No. 100% of the computations occur locally in your browser's JavaScript engine. Zero personal or financial data is transmitted to or saved on external servers.
-                    </p>
-                </details>
-                <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>Can I export or share my calculation results?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Yes! Click the "Copy Results" button to copy a formatted summary with a link directly to your clipboard for sharing via Slack, email, or messaging apps.
-                    </p>
-                </details>
-            </div>
-        </section>
-    </main>
+    <section class="card result" id="res" aria-labelledby="out-h">
+      <h2 id="out-h">2. Counts</h2>
+      <div class="kpis">
+        <div class="kpi big"><div class="v" id="c-words">0</div><div class="k">words</div></div>
+        <div class="kpi big"><div class="v" id="c-chars">0</div><div class="k">characters</div></div>
+        <div class="kpi"><div class="v" id="c-nospace">0</div><div class="k">characters without spaces</div></div>
+        <div class="kpi"><div class="v" id="c-sent">0</div><div class="k">sentences</div></div>
+        <div class="kpi"><div class="v" id="c-para">0</div><div class="k">paragraphs</div></div>
+        <div class="kpi"><div class="v" id="c-read">0 s</div><div class="k" id="c-read-k">reading time at 238 wpm</div></div>
+        <div class="kpi"><div class="v" id="c-speak">0 s</div><div class="k" id="c-speak-k">speaking time at 150 wpm</div></div>
+        <div class="kpi"><div class="v" id="c-avgw">—</div><div class="k">letters and numbers per word</div></div>
+        <div class="kpi"><div class="v" id="c-avgs">—</div><div class="k">words per sentence</div></div>
+      </div>
+      <p class="limit" id="c-limit" hidden></p>
+      <p class="sr-only" id="sr-status" aria-live="polite"></p>
+      <div class="actions">
+        <button type="button" class="btn" id="btn-copy">📋 Copy counts</button>
+        <button type="button" class="btn" id="btn-share">📤 Share</button>
+      </div>
+      <p class="hint">Sharing sends the counts and a link to this tool with your settings. Your text itself is never included.</p>
+    </section>
+  </div>
 
-    <!-- Floating Toast Notification -->
-    <div id="toastNotification" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white px-5 py-2.5 rounded-full text-xs font-bold shadow-2xl opacity-0 pointer-events-none transition-opacity duration-200 z-50">
-        Copied to clipboard!
-    </div>
+<!-- ADSENSE START: mid (right after the result card) -->
+<div class="ad-box ad-mid">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="1186914926" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: mid -->
 
-    <!-- Modern Trust Footer -->
-    <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500 mt-12">
-        <div class="max-w-6xl mx-auto px-4 space-y-3">
-            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 font-semibold text-slate-600">
-                <a href="/terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
-                <span class="text-slate-300">|</span>
-                <a href="/privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
-                <span class="text-slate-300">|</span>
-                <a href="/disclaimer.html" class="hover:text-blue-600 transition">Disclaimer</a>
-            </div>
-            <p class="max-w-xl mx-auto text-slate-400">
-                This tool is provided for educational and estimation purposes only. All calculations run client-side.
-            </p>
-            <p>&copy; 2026 Live Word & Character Counter. All rights reserved.</p>
-        </div>
-    </footer>
+  <section class="card" aria-labelledby="how-h">
+    <h2 id="how-h">🧮 How the counts work</h2>
+    <ul>
+      <li><strong>Words:</strong> groups of characters between spaces or line breaks that contain at least one letter or number. "well-known", "don't", "3.5" and "U.S." are one word each; a lone dash or emoji is not a word.</li>
+      <li><strong>Characters:</strong> every character as you see it, including spaces and tabs but not line breaks. Emoji and accented letters count once, even when a computer stores them as several code points.</li>
+      <li><strong>Characters without spaces:</strong> the same, minus spaces, tabs and line breaks.</li>
+      <li><strong>Sentences:</strong> text that ends at . ! ? or … followed by a space or line break, plus the end of each paragraph. Decimal numbers such as 3.5 do not end a sentence, but abbreviations such as Mr. can.</li>
+      <li><strong>Paragraphs:</strong> each line that has text on it. Blank lines are skipped.</li>
+      <li><strong>Reading and speaking time:</strong> words ÷ words per minute, rounded to the nearest second.</li>
+      <li><strong>Averages:</strong> letters and numbers per word (punctuation left out), and words per sentence, both to one decimal.</li>
+    </ul>
+    <p class="src">Reading speed source: Brysbaert, M. (2019). How many words do we read per minute? A review and meta-analysis of reading rate. Journal of Memory and Language, 109. The review of 190 studies found average silent reading rates of 238 words per minute for English non-fiction and 260 for fiction. The speaking default of 150 words per minute is a common pace for speeches and presentations.</p>
+  </section>
 
-    <!-- Logic Script -->
-    <script>
-        
-        function calculate() {
-            const prim = parseFloat(document.getElementById('primaryVal').value.replace(/,/g, '')) || 0;
-            const sec = parseFloat(document.getElementById('secVal').value) || 1;
-            const cat = document.getElementById('calcCat').value;
-            
-            let mult = 1.0;
-            if (cat === 'conservative') mult = 0.90;
-            if (cat === 'growth') mult = 1.15;
-            
-            const total = prim * sec * mult;
-            const monthly = total / 12;
-            const rate = ((total / (prim || 1)) * 10).toFixed(1);
-            
-            document.getElementById('resPrimary').textContent = '$' + Math.round(total).toLocaleString('en-US');
-            document.getElementById('resMonthly').textContent = '$' + Math.round(monthly).toLocaleString('en-US');
-            document.getElementById('resBenchmark').textContent = rate + '%';
-            
-            document.getElementById('resultCard').classList.remove('hidden');
-        }
-        
+  <section class="card" id="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">❓ Frequently asked questions</h2>
+    <div class="faq-item"><h3>How are words counted?</h3><p>A word is any group of characters between spaces or line breaks that contains at least one letter or number. So well-known, don't, 3.5 and U.S. each count as one word, and a dash on its own counts as none. This is close to how most word processors count.</p></div>
+    <div class="faq-item"><h3>Do characters include spaces?</h3><p>Characters with spaces counts every letter, number, symbol, emoji, space and tab, but not line breaks. Characters without spaces leaves out all spaces, tabs and line breaks. An emoji or a letter with an accent counts as one character, the way you see it on screen.</p></div>
+    <div class="faq-item"><h3>How is reading time estimated?</h3><p>Reading time is the word count divided by a reading speed. The default, 238 words per minute, is the average silent reading rate for adults reading English non-fiction in a 2019 review of 190 studies by Marc Brysbaert in the Journal of Memory and Language; the same review found 260 words per minute for fiction. You can enter your own speed.</p></div>
+    <div class="faq-item"><h3>How is speaking time estimated?</h3><p>Speaking time uses 150 words per minute by default, a typical pace for a speech or presentation. Enter a lower speed for a slow, formal talk or a higher one for a quick, casual one.</p></div>
+    <div class="faq-item"><h3>How are sentences and paragraphs counted?</h3><p>A sentence ends at a period, question mark, exclamation mark or ellipsis followed by a space or line break, and at the end of each paragraph. Abbreviations such as Mr. or e.g. can add an extra sentence. Each line that has text on it counts as one paragraph; blank lines are skipped.</p></div>
+  </section>
 
-        function copyResults() {
-            const resCard = document.getElementById('resultCard');
-            const lines = [];
-            lines.push("Live Word & Character Counter - Calculation Summary");
-            lines.push("=============================");
-            resCard.querySelectorAll('.flex.justify-between').forEach(el => {
-                const k = el.querySelector('span:first-child')?.innerText || '';
-                const v = el.querySelector('span:last-child')?.innerText || '';
-                if (k && v) lines.push(k + ' ' + v);
-            });
-            lines.push("-----------------------------");
-            lines.push("👉 Try it here: https://us-word-character-counter.enjoy-onepage.com/");
-            
-            const textToCopy = lines.join('\n');
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(textToCopy).then(() => showToast());
-            } else {
-                const ta = document.createElement('textarea');
-                ta.value = textToCopy;
-                document.body.appendChild(ta);
-                ta.select();
-                document.execCommand('copy');
-                document.body.removeChild(ta);
-                showToast();
-            }
-        }
+  <section class="card notice" aria-labelledby="note-h">
+    <h2 id="note-h">⚠️ Please note</h2>
+    <p>Word processors, schools, publishers and social apps each count a little differently, especially for hyphens, links, emoji and abbreviations. When a limit really matters, check the count in the tool or form that enforces it.</p>
+  </section>
+</main>
 
-        function showToast() {
-            const t = document.getElementById('toastNotification');
-            t.classList.remove('opacity-0', 'pointer-events-none');
-            setTimeout(() => {
-                t.classList.add('opacity-0', 'pointer-events-none');
-            }, 2200);
-        }
+<!-- ADSENSE START: bottom -->
+<div class="ad-box ad-bottom">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3416334507" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: bottom -->
 
-        function resetForm() {
-            document.getElementById('resultCard').classList.add('hidden');
-            document.getElementById('placeholderCard').classList.remove('hidden');
-        }
+<footer class="footer">
+  <p>A free word and character counter. Your text is not saved or sent to us.</p>
+  <p><a href="/disclaimer.html">Disclaimer</a> | <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a></p>
+</footer>
 
-        // Auto calculate on load
-        window.addEventListener('DOMContentLoaded', () => {
-            calculate();
-            document.getElementById('placeholderCard').classList.add('hidden');
-        });
-    </script>
+<div id="global-ux-toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- LOGIC START -->
+<script>
+(function () {
+  'use strict';
+  var SITE = 'https://us-word-character-counter.enjoy-onepage.com';
+  var TOOL_NAME = 'Word & Character Counter';
+  var DEF = { rs: 238, ss: 150 };
+  var U = { rs: 238, ss: 150, limit: 0, unit: 'words' };
+  var UNIT_WORD = { words: ['word', 'words'], chars: ['character', 'characters'], nospace: ['character', 'characters'] };
+  var LAST = null, cleared = null, toastTimer = null, srTimer = null;
+  var WORDISH = /[\p{L}\p{N}]/u, WORDCH = /[\p{L}\p{N}]/gu;
+  var seg = null;
+  try { seg = new Intl.Segmenter('en', { granularity: 'grapheme' }); } catch (e) { seg = null; }
+  function $(id) { return document.getElementById(id); }
+  function on(id, ev, fn) { var el = $(id); if (el) el.addEventListener(ev, fn); }
+
+  /* ---------- counting ---------- */
+  /* Latin letters, spacing modifiers and general punctuation (minus ZWNJ/ZWJ): each code point is its own grapheme
+     (CR LF never reaches here: line breaks are normalized first), so the length is exact and much faster to get. */
+  var FAST = /^[\x00-\u02ff\u2000-\u200b\u200e-\u206f]*$/;
+  function graphemes(s) {
+    if (!s) return 0;
+    if (FAST.test(s)) return s.length;
+    if (seg) { var n = 0, it = seg.segment(s)[Symbol.iterator](); while (!it.next().done) n++; return n; }
+    return Array.from(s).length;
+  }
+  function count(text) {
+    var t = String(text).replace(/\r\n?/g, '\n');
+    var words = t.split(/\s+/).filter(function (w) { return WORDISH.test(w); });
+    var letters = 0;
+    words.forEach(function (w) { var m = w.match(WORDCH); letters += m ? m.length : 0; });
+    var lines = t.split('\n').filter(function (l) { return l.trim() !== ''; });   /* paragraphs = lines with text */
+    var sentences = 0;
+    lines.forEach(function (l) {
+      l.split(/[.!?\u2026]+["'\u201d\u2019)\]]*(?=\s|$)/).forEach(function (piece) { if (WORDISH.test(piece)) sentences++; });
+    });
+    return {
+      words: words.length,
+      chars: graphemes(t.replace(/\n/g, '')),
+      nospace: graphemes(t.replace(/\s/g, '')),
+      sentences: sentences,
+      paragraphs: lines.length,
+      letters: letters
+    };
+  }
+  function duration(words, wpm) {
+    var s = Math.round(words / wpm * 60);
+    if (s < 60) return s + ' s';
+    var h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), r = s % 60;
+    if (h) return h + ' h ' + m + ' min';
+    return m + ' min' + (r ? ' ' + r + ' s' : '');
+  }
+  function n(x) { return x.toLocaleString('en-US'); }
+  function one(x) { return (Math.round(x * 10) / 10).toFixed(1); }
+
+  /* ---------- settings ---------- */
+  function readInt(id, lo, hi, allowEmpty) {
+    var s = String($(id).value).replace(/[,\s]/g, '');
+    if (s === '' && allowEmpty) return 0;
+    if (!/^\d+$/.test(s)) return null;
+    var v = Number(s);
+    return v >= lo && v <= hi ? v : null;
+  }
+  /* Valid values apply as you type. Errors appear when you leave a field, and once shown they update live. */
+  function readSettings(show) {
+    var rs = readInt('rs', 50, 2000), ss = readInt('ss', 50, 400), lim = readInt('limit', 1, 1000000, true);
+    var msgs = [];
+    if (rs === null) msgs.push('Reading speed must be a whole number from 50 to 2,000 words per minute.');
+    if (ss === null) msgs.push('Speaking speed must be a whole number from 50 to 400 words per minute.');
+    if (lim === null) msgs.push('The limit must be a whole number from 1 to 1,000,000, or empty for no limit.');
+    if (rs !== null) U.rs = rs;
+    if (ss !== null) U.ss = ss;
+    if (lim !== null) U.limit = lim;
+    U.unit = $('unit').value;
+    var e = $('err');
+    if (show || !e.hidden) { e.hidden = !msgs.length; e.textContent = msgs.join(' '); }
+  }
+
+  /* ---------- render ---------- */
+  function render() {
+    var c = count($('txt').value);
+    LAST = c;
+    $('c-words').textContent = n(c.words);
+    $('c-chars').textContent = n(c.chars);
+    $('c-nospace').textContent = n(c.nospace);
+    $('c-sent').textContent = n(c.sentences);
+    $('c-para').textContent = n(c.paragraphs);
+    $('c-read').textContent = duration(c.words, U.rs);
+    $('c-read-k').textContent = 'reading time at ' + n(U.rs) + ' wpm';
+    $('c-speak').textContent = duration(c.words, U.ss);
+    $('c-speak-k').textContent = 'speaking time at ' + n(U.ss) + ' wpm';
+    $('c-avgw').textContent = c.words ? one(c.letters / c.words) : '—';
+    $('c-avgs').textContent = c.sentences ? one(c.words / c.sentences) : '—';
+    var lim = $('c-limit');
+    if (U.limit) {
+      var have = U.unit === 'words' ? c.words : U.unit === 'chars' ? c.chars : c.nospace, d = U.limit - have, w = UNIT_WORD[U.unit];
+      var what = U.unit === 'nospace' ? ' (no spaces)' : '';
+      lim.hidden = false;
+      lim.className = 'limit ' + (d >= 0 ? 'ok' : 'over');
+      lim.textContent = d >= 0 ? '✓ ' + n(have) + ' of ' + n(U.limit) + ' ' + w[1] + what + ' · ' + n(d) + ' ' + (d === 1 ? w[0] : w[1]) + ' left'
+        : '✗ ' + n(have) + ' of ' + n(U.limit) + ' ' + w[1] + what + ' · ' + n(-d) + ' ' + (-d === 1 ? w[0] : w[1]) + ' over the limit';
+    } else { lim.hidden = true; lim.textContent = ''; }
+  }
+  function query() {
+    var q = [];
+    if (U.rs !== DEF.rs) q.push('rs=' + U.rs);
+    if (U.ss !== DEF.ss) q.push('ss=' + U.ss);
+    if (U.limit) { q.push('limit=' + U.limit); q.push('unit=' + U.unit); }
+    return q.length ? '?' + q.join('&') : '';
+  }
+  function link() { return SITE + '/' + query(); }
+  function updateUrl() { try { history.replaceState(null, '', location.pathname + query()); } catch (e) { /* ignore */ } }
+  function summary() {
+    var c = LAST; if (!c) return '';
+    var s = '📝 ' + n(c.words) + ' ' + (c.words === 1 ? 'word' : 'words') + ' · ' + n(c.chars) + ' ' + (c.chars === 1 ? 'character' : 'characters') +
+      ' (' + n(c.nospace) + ' without spaces) · ' +
+      n(c.sentences) + ' ' + (c.sentences === 1 ? 'sentence' : 'sentences') + ' · ' + n(c.paragraphs) + ' ' + (c.paragraphs === 1 ? 'paragraph' : 'paragraphs') +
+      ' · about ' + duration(c.words, U.rs) + ' to read at ' + n(U.rs) + ' wpm';
+    return s + '.\n👉 ' + TOOL_NAME + ': ' + link();
+  }
+  function showToastNotification(msg) {
+    var t = $('global-ux-toast'); if (!t) return;
+    t.textContent = msg; t.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(function () { t.classList.remove('show'); }, 2200);
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    showToastNotification(ok ? 'Copied! Paste it anywhere to share.' : 'Could not copy. Please select the text and copy it yourself.');
+  }
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { showToastNotification('Copied! Paste it anywhere to share.'); }, function () { fallbackCopy(text); });
+    } else { fallbackCopy(text); }
+  }
+
+  /* One short spoken update a second after typing stops, instead of re-reading nine numbers on every key. */
+  function announce() {
+    clearTimeout(srTimer);
+    srTimer = setTimeout(function () {
+      var c = LAST, lim = $('c-limit'); if (!c) return;
+      $('sr-status').textContent = n(c.words) + ' ' + (c.words === 1 ? 'word' : 'words') + ', ' + n(c.chars) + ' ' +
+        (c.chars === 1 ? 'character' : 'characters') + '.' + (lim.hidden ? '' : ' ' + lim.textContent.replace(/^[\u2713\u2717]\s*/, ''));
+    }, 1000);
+  }
+  function ready() {
+    if (LAST && LAST.chars) return true;
+    showToastNotification('Type or paste some text first.');
+    return false;
+  }
+
+  /* ---------- events ---------- */
+  on('txt', 'input', function () { if (cleared !== null && $('txt').value) { cleared = null; $('btn-undo').hidden = true; } render(); announce(); });
+  ['rs', 'ss', 'limit'].forEach(function (id) {
+    on(id, 'input', function () { readSettings(false); render(); updateUrl(); });
+    on(id, 'change', function () { readSettings(true); render(); updateUrl(); });
+  });
+  on('unit', 'change', function () { readSettings(true); render(); updateUrl(); });
+  on('editor', 'click', function (e) {
+    var b = e.target && e.target.closest ? e.target.closest('[data-rs]') : null;
+    if (!b) return;
+    $('rs').value = b.getAttribute('data-rs'); readSettings(false); render(); updateUrl();
+  });
+  on('btn-clear', 'click', function () {
+    var v = $('txt').value;
+    if (!v) return;
+    cleared = v; $('txt').value = ''; $('btn-undo').hidden = false; render(); announce();
+    showToastNotification('Text cleared. Press Undo clear to bring it back.');
+  });
+  on('btn-undo', 'click', function () {
+    if (cleared === null) return;
+    $('txt').value = cleared; cleared = null; $('btn-undo').hidden = true; render(); announce();
+  });
+  on('btn-copy', 'click', function () { if (ready()) copyText(summary()); });
+  on('btn-share', 'click', function () {
+    if (!ready()) return;
+    var text = summary();
+    if (navigator.share) { navigator.share({ title: TOOL_NAME, text: text, url: link() }).catch(function (e) { if (!e || e.name !== 'AbortError') copyText(text); }); }
+    else { copyText(text); }
+  });
+
+  /* ---------- start: link values (?rs=238&ss=150&limit=500&unit=words) ---------- */
+  (function init() {
+    var q; try { q = new URLSearchParams(location.search); } catch (e) { q = null; }
+    if (q) {
+      var ok = function (v, lo, hi) { return v !== null && /^\d+$/.test(v) && Number(v) >= lo && Number(v) <= hi; };
+      if (ok(q.get('rs'), 50, 2000)) $('rs').value = q.get('rs');
+      if (ok(q.get('ss'), 50, 400)) $('ss').value = q.get('ss');
+      if (ok(q.get('limit'), 1, 1000000)) $('limit').value = q.get('limit');
+      var un = q.get('unit');
+      if (un === 'words' || un === 'chars' || un === 'nospace') $('unit').value = un;
+    }
+    readSettings(false);
+    render();
+  })();
+})();
+</script>
+<!-- LOGIC END -->
 </body>
 </html>
